@@ -3,18 +3,23 @@ document.querySelectorAll('#navbarSupportedContent a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if(target) target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// Cart button demo
-const cartBtn = document.getElementById('Cart');
-cartBtn.addEventListener('click', () => {
-    alert('Cart clicked! Implement your add-to-cart logic here.');
+// Cart button click demo
+document.querySelectorAll('#Cart').forEach(btn => {
+    btn.addEventListener('click', () => {
+        alert('Cart clicked! Add your JS logic here.');
+    });
 });
 
-// Navbar background change on scroll
+// Example: highlight navbar on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
-    navbar.style.backgroundColor = window.scrollY > 50 ? 'rgba(0,0,0,0.9)' : 'rgba(0,0,0,0.7)';
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(0,0,0,0.9)';
+    } else {
+        navbar.style.backgroundColor = 'rgba(0,0,0,0.7)';
+    }
 });
