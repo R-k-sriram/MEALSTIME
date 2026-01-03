@@ -1,14 +1,17 @@
 # Use lightweight Nginx image
 FROM nginx:alpine
 
-# Remove default Nginx website
-RUN rm -rf /usr/share/nginx/html/*
+# Set working directory inside container
+WORKDIR /usr/share/nginx/html
 
-# Copy your website files into Nginx directory
-COPY . /usr/share/nginx/html/
+# Remove default Nginx website
+RUN rm -rf ./*
+
+# Copy all website files and folders
+COPY . .
 
 # Expose port 80
 EXPOSE 80
 
-# Start Nginx
+# Start Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
