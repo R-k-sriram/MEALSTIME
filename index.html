@@ -3,165 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MealsTime</title>
+    <title>MealsTime - Delicious Food Delivery</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-middle" id="navbar">
-    <a class="navbar-brand" href="#"><img src="images/logo-removebg-preview.png" class="logo-img"><span class="name">MEALSTIME</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#About">About</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#Product">Product</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#Contact">Contact</a></li>
-      </ul>
-      <button id="Cart" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-      </svg></button>
-      <button class="btn SignIn">SignIn</button>
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#Home">
+            <img src="images/logo-removebg-preview.png" class="logo-img">
+            <span class="name">MEALSTIME</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Product">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <button id="Cart" class="btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-light ml-1">0</span>
+                </button>
+                <button class="btn SignIn ml-3">Sign In</button>
+            </div>
+        </div>
     </div>
 </nav>
 
 <section id="Home">
-    <h1 class="text-center m-5">Dinner Time</h1>
-    <p>Order your favourite foods</p>
-    <div class="inputgroup text-center">
-        <input type="text" placeholder="Email Address">
-        <button class="btn SignIn">LogIn</button>
+    <div class="container">
+        <h1>Dinner Time</h1>
+        <p class="lead">Order your favorite foods delivered hot & fresh</p>
+        <div class="inputgroup">
+            <input type="email" class="form-control" placeholder="Enter your email address">
+            <button class="btn SignIn">Get Started</button>
+        </div>
+        <div class="mt-5">
+            <a href="#Product" class="btn btn-outline-light btn-lg mt-3">
+                <i class="fas fa-utensils mr-2"></i>Explore Menu
+            </a>
+        </div>
     </div>
 </section>
 
 <section id="About">
-    <div class="container m-5">
-        <div class="row abt">
-            <div class="col-lg-6 col-md-6 col-12">
-                <img src="images/GF.jpg" class="img-fluid">
+    <div class="container">
+        <div class="row abt align-items-center">
+            <div class="col-lg-6 col-md-6 col-12 mb-4 mb-md-0">
+                <img src="images/GF.jpg" class="img-fluid" alt="About MealsTime">
             </div>
-            <div class="col-lg-6 col-md-6 col-12 abt-page">
+            <div class="col-lg-6 col-md-6 col-12">
                 <h1 class="AB">ABOUT US</h1>
-                <p>The reason why chicken biryani is so famous is due to the flavors, ingredients, and nostalgia it carries. Food provides nutritional support and energy, and its color, taste, smell, and texture arouse the senses.</p>
+                <p>Welcome to MealsTime, where culinary excellence meets convenience. We believe that great food has the power to bring people together and create memorable experiences.</p>
+                <p>Our chefs use only the freshest ingredients to prepare authentic dishes that tantalize your taste buds. From traditional biryanis to contemporary fusion meals, we bring the restaurant experience to your doorstep.</p>
+                <p>The reason why our chicken biryani is so famous is due to the perfect blend of spices, premium ingredients, and traditional cooking methods that create an unforgettable flavor experience.</p>
+                <div class="mt-4">
+                    <a href="#Contact" class="btn SignIn">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="Product">
-    <div class="container m-5">
-        <h1 class="text-center m-5">OUR PRODUCTS</h1>
+    <div class="container">
+        <h1>OUR SPECIALTIES</h1>
+        <p class="text-center mb-5 text-muted">Discover our handcrafted dishes made with love and expertise</p>
 
-        <div class="row set-row-1">
+        <div class="set-row-1">
             <div class="card">
-                <img src="images/briyani.jpeg" class="card-img-top">
+                <img src="images/briyani.jpg" class="card-img-top" alt="Chicken Biryani">
                 <div class="card-body">
                     <h5 class="card-title">Chicken Biryani</h5>
-                    <span class="price card-price">₹110</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Fragrant basmati rice cooked with tender chicken and aromatic spices</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹110</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/chicken-meal.avif" class="card-img-top">
+                <img src="images/chicken meal.jpg" class="card-img-top" alt="Chicken Meal">
                 <div class="card-body">
                     <h5 class="card-title">Chicken Meal</h5>
-                    <span class="price card-price">₹170</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Complete meal with chicken curry, rice, roti, and salad</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹170</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/chicken-rice.jpeg" class="card-img-top">
+                <img src="images/chicken rice.jpg" class="card-img-top" alt="Chicken Rice">
                 <div class="card-body">
                     <h5 class="card-title">Chicken Rice</h5>
-                    <span class="price card-price">₹90</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Steamed rice served with delicious chicken gravy</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹90</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row set-row-1 mt-3">
+        <div class="set-row-2 mt-5">
             <div class="card">
-                <img src="images/chilli-chicken.avif" class="card-img-top">
+                <img src="images/chilli chicken.jpg" class="card-img-top" alt="Chilli Chicken">
                 <div class="card-body">
                     <h5 class="card-title">Chilli Chicken</h5>
-                    <span class="price card-price">₹80</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Crispy chicken tossed in spicy chilli sauce with bell peppers</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹80</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/dal-masala.jpg" class="card-img-top">
+                <img src="images/dal masala.jpg" class="card-img-top" alt="Dal Masala">
                 <div class="card-body">
                     <h5 class="card-title">Dal Masala</h5>
-                    <span class="price card-price">₹30</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Hearty lentil curry tempered with traditional Indian spices</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹30</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/fish-curry.jpg" class="card-img-top">
+                <img src="images/fish curry.jpg" class="card-img-top" alt="Fish Curry">
                 <div class="card-body">
                     <h5 class="card-title">Fish Curry</h5>
-                    <span class="price card-price">₹150</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Fresh fish cooked in rich and tangy coconut-based gravy</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹150</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row set-row-1 mt-3">
+        <div class="set-row-3 mt-5">
             <div class="card">
-                <img src="images/fish-fry.avif" class="card-img-top">
+                <img src="images/fish fry.jpg" class="card-img-top" alt="Fish Fry">
                 <div class="card-body">
                     <h5 class="card-title">Fish Fry</h5>
-                    <span class="price card-price">₹100</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Crispy fried fish marinated with special spices</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹100</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/fish-meal.jpg" class="card-img-top">
+                <img src="images/fish meal.jpg" class="card-img-top" alt="Fish Meal">
                 <div class="card-body">
                     <h5 class="card-title">Fish Meal</h5>
-                    <span class="price card-price">₹120</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Complete fish meal with curry, rice, and accompaniments</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹120</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="images/fish.jpg" class="card-img-top">
+                <img src="images/fish.jpg" class="card-img-top" alt="Grilled Fish">
                 <div class="card-body">
                     <h5 class="card-title">Grilled Fish</h5>
-                    <span class="price card-price">₹100</span><br>
-                    <a href="#" class="btn SignIn">Add To Cart</a>
+                    <p class="card-text text-muted">Healthy grilled fish with lemon butter sauce</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="price">₹100</span>
+                        <a href="#" class="btn SignIn"><i class="fas fa-cart-plus mr-2"></i>Add To Cart</a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
 <section id="Contact">
     <div class="container">
-        <div class="row cu">
-            <div class="col-lg-6 col-md-6 col-12">
-                <img src="images/logo-removebg-preview.png" class="img-fluid">
+        <div class="cu align-items-center">
+            <div class="col-lg-6 col-md-6 col-12 text-center mb-5 mb-md-0">
+                <img src="images/logo-removebg-preview.png" class="img-fluid" alt="MealsTime Logo">
+                <div class="mt-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white mx-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12 contact">
                 <h1>CONTACT US</h1>
+                <p class="mb-4">Have questions or feedback? We'd love to hear from you!</p>
                 <form>
-                    <input type="text" class="form-control" placeholder="Enter Your name">
-                    <input type="email" class="form-control" placeholder="Enter Your Email">
-                    <textarea class="form-control" placeholder="Enter Your Message"></textarea>
-                    <button class="btn SignIn">Send Message</button>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Enter Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn SignIn btn-block">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
                 </form>
             </div>
         </div>
     </div>
 </section>
 
-<footer>Copyrights @Sriram 2024</footer>
+<footer class="py-4">
+    <div class="container">
+        <p class="mb-2">Copyrights © Sriram 2024. All rights reserved.</p>
+        <p class="mb-0">
+            <i class="fas fa-phone-alt mr-2"></i>+91 9876543210 | 
+            <i class="fas fa-envelope ml-3 mr-2"></i>info@mealstime.com
+        </p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script>
+    // Smooth scrolling for anchor links
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 70
+                }, 800);
+            }
+        });
+        
+        // Navbar background on scroll
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+                $('#navbar').css('background', 'rgba(0, 0, 0, 0.98)');
+            } else {
+                $('#navbar').css('background', 'rgba(0, 0, 0, 0.95)');
+            }
+        });
+        
+        // Add to cart functionality
+        $('.card .btn').click(function(e) {
+            e.preventDefault();
+            var item = $(this).closest('.card').find('.card-title').text();
+            var price = $(this).closest('.card').find('.price').text();
+            
+            // Update cart badge
+            var currentCount = parseInt($('#Cart .badge').text());
+            $('#Cart .badge').text(currentCount + 1);
+            
+            // Show notification
+            alert(item + " added to cart for " + price);
+        });
+    });
+</script>
 </body>
 </html>
